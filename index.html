@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" id="sTheme">
+    <title>Mine Sweeper</title>
+</head>
+<body>
+    <div class = "game-window">
+        <h1>Mine Sweeper</h1>
+        <button class = "button smiley" onclick="gameInit()"></button>
+        <br> Choose Difficulty:
+            <input type="radio" name="difficulty" size="4" value="2"> Easy - 4x4
+            <input type="radio" name="difficulty" size="8" value="12" checked> Normal - 8x8
+            <input type="radio" name="difficulty" size="12" value="30"> Hard - 12x12 <br>
+        <table class = "game-table"></table>
+       
+
+        <div class = lives-display> <table class = lives>
+            <tr> Lives
+                <td id="lives-2"><img src="img/heart.png"></td>
+                <td id="lives-1"><img src="img/heart.png"></td>
+                <td id="lives-0"><img src="img/heart.png"></td>
+            </tr>
+        </table><label id="minutes">00</label>:<label id="seconds">00</label> </div>
+        <button class="button theme" onclick="openModal()"><h4>Theme</h4></button>
+        <button class="button theme" onclick="undo()"><h4>Undo</h4></button>
+        <div class="modal">
+            <button class= closebtn onclick="closeModal()">x</button>
+            <br> Choose Theme: <br>
+            <input type="radio" name="theme" value="classic" checked> Classic
+            <input type="radio" name="theme" value="water"> Water
+            <input type="radio" name="theme" value="olivia"> Olivia <br>
+            <input type="radio" name="theme" value="botanical"> Botanical
+            <input type="radio" name="theme" value="dark"> Dark <br> <br>
+            <button onclick="applyTheme()">Apply Theme</button>
+        </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

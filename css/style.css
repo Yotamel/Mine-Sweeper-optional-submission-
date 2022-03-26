@@ -1,0 +1,137 @@
+body {background-color: rgb(66, 69, 71);}
+
+.game-window{
+    display: block;
+    border-radius: 5%;
+    height: 600px;
+    width: 700px;
+    background-color: rgb(121, 121, 121);
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button{
+  background-color: #c7c7c7;
+  border: 6px outset;
+  padding: 32px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:active{
+    border-style: inset;
+}
+
+.theme{
+    padding: 0px 15px;
+    position: relative;
+    bottom: 600px;
+    left: 240px;
+}
+
+.modal {
+    background-color: rgb(88, 90, 90);
+    display:none;
+    position: relative;
+    text-align: center;
+    bottom:500px;
+    left: 200px;
+    padding: 5px;
+    padding-bottom: 40px;
+    width: 300px;
+}
+
+.modal button{
+    background-color: #c7c7c7;
+    border: 4px outset;
+}
+
+.modal button:active{
+    border-style: inset;
+}
+
+.closebtn{
+    float: right;
+}
+
+.smiley{
+    background: url(/img/Smiley-none-transparent.png);
+  background-size: 65px 65px;
+}
+
+.lives-display{
+    display: block;
+    position: relative;
+    background-color:#c7c7c7;
+    width: 200px;
+    height: 100px;
+    left: 15px;
+    bottom: 530px;
+    text-align: center;
+}
+
+.lives{
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.game-table{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+
+}
+
+.cell{
+    background-color: #c7c7c7;
+    border: 4px outset;
+    object-fit: cover;
+}
+
+.red{
+    background-color: #b11919;
+    border: 4px inset;
+    object-fit: cover;
+}
+
+.easy{
+    height:80px; 
+    width: 80px;
+}
+
+.normal{
+    height:36px; 
+    width: 36px;
+}
+
+.hard{
+    height:20px; 
+    width: 20px;
+}
+
+.cell img{
+    height: 75%;
+    width: auto;
+}
+
+.shown{
+    border-style: inset;
+    background-color: #696969; /*nice*/
+    font-weight: bold;
+}
+
+img{
+    height: 30px;
+    width: auto;
+}
+
